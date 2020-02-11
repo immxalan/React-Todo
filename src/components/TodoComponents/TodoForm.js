@@ -24,12 +24,6 @@ class TodoForm extends Component {
             <form onSubmit={this.handleSubmit}>
                 <input type="text" name="item" placeholder="...todo" value={this.state.newItem} onChange={this.handleChanges}/>
                 <button>Add Todo</button>
-                <button
-            onClick={this.props.clearCompleted}
-            class="bttn-unite bttn-md bttn-primary"
-          >
-            Clear
-          </button>
             </form>
         );
     }
